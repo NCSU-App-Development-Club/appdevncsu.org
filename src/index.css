@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
+    format("truetype");
+}
+
+html {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animate-slide-in {
+  animation: slideIn 2s ease-in-out forwards;
+}
+.fade-in-1 {
+  animation: fadeIn 2s 0s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.fade-in-2 {
+  animation: fadeIn 2s 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.fade-in-3 {
+  animation: fadeIn 2s 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.fade-in-4 {
+  animation: fadeIn 2s 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+#teams-grid,
+#projects-grid {
+  & h3 {
+    @apply flex flex-row gap-4 text-2xl mb-3;
+    & img {
+      @apply h-8;
+    }
+  }
+  & > div {
+    @apply border-1 border-gray-500 rounded-2xl p-4 bg-[#303030];
+  }
+}
+
+#projects-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+  & > div {
+    @apply grid grid-cols-2 grid-flow-col justify-items-center gap-4;
+    & > img {
+      @apply w-48 self-center;
+    }
+  }
+}
+
+#about-images {
+  & img {
+    @apply rounded-2xl border-1 border-gray-500;
+  }
+}
