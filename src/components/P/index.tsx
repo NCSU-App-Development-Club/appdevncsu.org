@@ -1,5 +1,13 @@
 import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
-export default function P({ children }: { children: ReactNode }) {
-  return <p className="mb-5">{children}</p>;
+export default function P({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  const mergedClassName = twMerge("mb-5", className || []);
+  return <p className={mergedClassName}>{children}</p>;
 }
