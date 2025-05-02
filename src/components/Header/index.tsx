@@ -35,13 +35,25 @@ export default function Header() {
             className="space-y-2 shadow-md text-center p-4 m-4 md:hidden flex-col fixed top-16 bg-[#1a1a1a] rounded-2xl flex right-[-8rem] transition-all duration-500"
             id="dropdown"
           >
-            <a href="#about" className="">
+            <a
+              href="#about"
+              className="hover:text-gray-300"
+              onClick={toggleDropdown}
+            >
               About
             </a>
-            <a href="#teams" className="">
+            <a
+              href="#teams"
+              className="hover:text-gray-300"
+              onClick={toggleDropdown}
+            >
               Teams
             </a>
-            <a href="#projects" className="">
+            <a
+              href="#projects"
+              className="hover:text-gray-300"
+              onClick={toggleDropdown}
+            >
               Apps
             </a>
             <a
@@ -57,8 +69,10 @@ export default function Header() {
   );
 }
 
-function toggleDropdown(e: any) {
-  e.preventDefault();
+function toggleDropdown(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+  if (e.currentTarget.id === "burger") {
+    e.preventDefault();
+  }
   const dropdown = document.getElementById("dropdown");
   if (!dropdown) return;
   if (dropdown.classList.contains("right-0")) {
