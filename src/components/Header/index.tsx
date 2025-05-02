@@ -24,7 +24,7 @@ export default function Header() {
             </a>
           </nav>
           <a
-            href="javascript:;"
+            href=""
             className="icon md:hidden"
             id="burger"
             onClick={toggleDropdown}
@@ -57,7 +57,8 @@ export default function Header() {
   );
 }
 
-function toggleDropdown() {
+function toggleDropdown(e: any) {
+  e.preventDefault();
   const dropdown = document.getElementById("dropdown");
   if (!dropdown) return;
   if (dropdown.classList.contains("right-0")) {
