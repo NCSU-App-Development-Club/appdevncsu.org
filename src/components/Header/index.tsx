@@ -29,7 +29,7 @@ export default function Header() {
             id="burger"
             onClick={toggleDropdown}
           >
-            <i className="fa fa-bars"></i>
+            <i className="fa fa-solid fa-bars fa-lg"></i>
           </a>
           <nav
             className="space-y-2 shadow-md text-center p-4 m-4 md:hidden flex-col fixed top-16 bg-[#1a1a1a] rounded-2xl flex right-[-8rem] transition-all duration-500"
