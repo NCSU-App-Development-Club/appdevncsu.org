@@ -24,7 +24,7 @@ export default function Header() {
             </a>
           </nav>
           <a
-            href="javascript:void(0);"
+            href="javascript:;"
             className="icon md:hidden"
             id="burger"
             onClick={toggleDropdown}
