@@ -46,7 +46,7 @@ html {
   animation-fill-mode: forwards;
 }
 .fade-in-4 {
-  animation: fadeIn 1s 1s ease-in-out;
+  animation: fadeIn 1s 0.75s ease-in-out;
   animation-fill-mode: forwards;
 }
 
