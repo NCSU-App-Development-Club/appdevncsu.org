@@ -31,22 +31,22 @@ html {
   }
 }
 .animate-slide-in {
-  animation: slideIn 2s ease-in-out forwards;
+  animation: slideIn 1s ease-in-out forwards;
 }
 .fade-in-1 {
-  animation: fadeIn 2s 0s ease-in-out;
+  animation: fadeIn 1s 0s ease-in-out;
   animation-fill-mode: forwards;
 }
 .fade-in-2 {
-  animation: fadeIn 2s 0.5s ease-in-out;
+  animation: fadeIn 1s 0.25s ease-in-out;
   animation-fill-mode: forwards;
 }
 .fade-in-3 {
-  animation: fadeIn 2s 1s ease-in-out;
+  animation: fadeIn 1s 0.5s ease-in-out;
   animation-fill-mode: forwards;
 }
 .fade-in-4 {
-  animation: fadeIn 2s 1.5s ease-in-out;
+  animation: fadeIn 1s 1s ease-in-out;
   animation-fill-mode: forwards;
 }
 
