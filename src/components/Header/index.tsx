@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 export default function Header() {
   return (
     <header className="fixed w-dvw top-0 bg-[#1a1a1a] shadow-md z-50">
@@ -29,7 +32,7 @@ export default function Header() {
             id="burger"
             onClick={toggleDropdown}
           >
-            <i className="fa fa-solid fa-bars fa-lg"></i>
+            <FontAwesomeIcon icon={faBars} size="lg" />
           </a>
           <nav
             className="space-y-2 shadow-md text-center p-4 m-4 md:hidden flex-col fixed top-16 bg-[#1a1a1a] rounded-2xl flex right-[-8rem] transition-all duration-500"
