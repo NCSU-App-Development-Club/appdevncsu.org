@@ -3,8 +3,8 @@ import flutterLogo from "./assets/images/flutter.svg";
 import kotlinLogo from "./assets/images/kotlin.svg";
 import swiftLogo from "./assets/images/swift.svg";
 
-import androidMeetingPhoto from "./assets/images/about/android-meeting.png";
-import goodbyeDinnerPhoto from "./assets/images/about/goodbye-dinner.png";
+import androidMeetingPhoto from "./assets/images/about/android-meeting.webp";
+import goodbyeDinnerPhoto from "./assets/images/about/goodbye-dinner.webp";
 
 import ncsuguessrScreenshot from "./assets/images/projects/ncsuguessr.png";
 import gpaiScreenshot from "./assets/images/projects/gpai.png";
