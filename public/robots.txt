@@ -1,0 +1,7 @@
+# robots.txt
+
+User-agent: *
+Disallow:
+
+# Sitemap
+Sitemap: https://appdevncsu.org/sitemap.xml
