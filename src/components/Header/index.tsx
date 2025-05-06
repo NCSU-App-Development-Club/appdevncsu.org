@@ -1,12 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import logo from "../../assets/images/logo.png";
 
 export default function Header() {
   return (
     <header className="fixed w-dvw top-0 bg-[#1a1a1a] shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <a href="#main">
+          <a href="#main" className="flex items-center gap-4">
+            <img src={logo} alt="logo" className="h-8" />
             <div className="text-xl font-bold">NCSU App Dev Club</div>
           </a>
           <nav className="space-x-6 hidden md:block">
@@ -62,6 +64,7 @@ export default function Header() {
             <a
               href="#apply"
               className="bg-white text-black px-3 py-1 rounded hover:bg-gray-100"
+              onClick={toggleDropdown}
             >
               Apply
             </a>
