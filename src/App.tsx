@@ -120,44 +120,6 @@ function App() {
           <P>Each team meets weekly, works on real projects, and contributes to the overall success of the club. No prior experience required — just curiosity and a willingness to learn.</P>
         </Section>
         <ProjectsSection />
-        <Section id="projects">
-          <H2>Projects</H2>
-          <div id="projects-grid">
-            <div>
-              <div>
-                <h3>NCSUGuessr</h3>
-                <P>
-                  <i>Spring 2025 - Present</i>
-                </P>
-                <P>
-                  A location guessing game where players identify places around NC State University based on campus images. It offers a fun and interactive way to explore and test knowledge of the
-                  university's landmarks.
-                </P>
-              </div>
-              <img
-                src={ncsuguessrScreenshot}
-                alt="NCSUGuessr home screen."
-              />
-            </div>
-            <div>
-              <div>
-                <h3>GPAi</h3>
-                <P>
-                  <i>Fall 2024 - Present</i>
-                </P>
-                <P>
-                  A mobile application that help students forecast their GPA and receive personal.mapized academic advice. By uploading a PDF transcript, users can track their academic progress and
-                  make informed decisions regarding their courses and grades.
-                </P>
-              </div>
-              <img
-                src={gpaiScreenshot}
-                alt="GPAi home screen."
-              />
-            </div>
-          </div>
-        </Section>
-
         <Section id="apply">
           <H2>Apply</H2>
           <P>Applications for Fall 2025 will open within the few weeks of the semester.</P>
