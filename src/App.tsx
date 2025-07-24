@@ -6,9 +6,6 @@ import swiftLogo from "./assets/images/swift.svg";
 import androidMeetingPhoto from "./assets/images/about/android-meeting.webp";
 import goodbyeDinnerPhoto from "./assets/images/about/goodbye-dinner.webp";
 
-import ncsuguessrScreenshot from "./assets/images/projects/ncsuguessr.png";
-import gpaiScreenshot from "./assets/images/projects/gpai.png";
-
 import Header from "./components/Header";
 import Background from "./components/Background";
 import Landing from "./components/Landing";
@@ -18,8 +15,9 @@ import Footer from "./components/Footer";
 import H2 from "./components/headings/H2";
 import P from "./components/P";
 
-import ProjectCard from "./components/ProjectCard";
-import projects from "./components/ProjectCard/project-data.json";
+import projects from "./assets/project-data.json";
+
+import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 
 function App() {
   return (
@@ -119,7 +117,7 @@ function App() {
 
           <P>Each team meets weekly, works on real projects, and contributes to the overall success of the club. No prior experience required — just curiosity and a willingness to learn.</P>
         </Section>
-        <ProjectsSection />
+        <ProjectsSection projects={projects} />
         <Section id="apply">
           <H2>Apply</H2>
           <P>Applications for Fall 2025 will open within the few weeks of the semester.</P>
@@ -137,26 +135,6 @@ function App() {
       </main>
       <Footer />
     </>
-  );
-}
-
-function ProjectsSection() {
-  return (
-    <Section id="projects">
-      <H2>Projects</H2>
-      <div id="projects-grid">
-        {projects.map((project, idx) => (
-          <ProjectCard
-            key={idx}
-            title={project.title}
-            dates={project.dates}
-            description={project.description}
-            imageSrc={project.imageSrc}
-            imageAlt={project.imageAlt}
-          />
-        ))}
-      </div>
-    </Section>
   );
 }
 
