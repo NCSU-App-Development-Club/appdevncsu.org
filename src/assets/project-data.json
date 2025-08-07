@@ -1,0 +1,16 @@
+[
+  {
+    "title": "NCSUGuessr",
+    "dates": "Spring 2025 - Present",
+    "description": "A location guessing game where players identify places around NC State University based on campus images. It offers a fun and interactive way to explore and test knowledge of the university's landmarks.",
+    "imageSrc": "ncsuguessr.png",
+    "imageAlt": "NCSUGuessr home screen."
+  },
+  {
+    "title": "GPAi",
+    "dates": "Fall 2024 - Present",
+    "description": "A mobile application that help students forecast their GPA and receive personalized academic advice. By uploading a PDF transcript, users can track their academic progress and make informed decisions regarding their courses and grades.",
+    "imageSrc": "gpai.png",
+    "imageAlt": "GPAi home screen."
+  }
+]
