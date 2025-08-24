@@ -120,8 +120,9 @@ function App() {
         <ProjectsSection projects={projects} />
         <Section id="apply">
           <H2>Apply</H2>
-          <P>Applications for Fall 2025 will open within the few weeks of the semester.</P>
-          <P>
+          <P>Applications for Fall 2025 are open: <a className="underline" href="https://forms.gle/ijXXN3C5q5tF5DJg7" target="_blank">https://forms.gle/ijXXN3C5q5tF5DJg7</a></P>
+          <P>Please submit the above form by Saturday, 8/30/25 at 11:59pm.</P>
+          {/* <P>
             In the meantime, please feel free to{" "}
             <a
               href="https://forms.gle/K1SBAP8dNEnqwUSv7"
@@ -130,7 +131,7 @@ function App() {
               submit your resume
             </a>{" "}
             to express your interest in joining!
-          </P>
+          </P> */}
         </Section>
       </main>
       <Footer />
