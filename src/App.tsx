@@ -120,7 +120,7 @@ function App() {
         <ProjectsSection projects={projects} />
         <Section id="apply">
           <H2>Apply</H2>
-          <P>The application for Spring 2025 will open within the first few weeks of the spring semester, check back here then for the link.</P>
+          <P>The application for Fall 2026 will open within the first few weeks of the fall semester, check back here then for the link.</P>
           {/* <P>
             In the meantime, please feel free to{" "}
             <a
