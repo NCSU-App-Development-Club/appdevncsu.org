@@ -1,7 +1,7 @@
-import reactLogo from "../../assets/images/react.svg";
-import flutterLogo from "../../assets/images/flutter.svg";
-import kotlinLogo from "../../assets/images/kotlin.svg";
-import swiftLogo from "../../assets/images/swift.svg";
+import reactLogo from '../../assets/images/react.svg'
+import flutterLogo from '../../assets/images/flutter.svg'
+import kotlinLogo from '../../assets/images/kotlin.svg'
+import swiftLogo from '../../assets/images/swift.svg'
 
 export default function Landing() {
   return (
@@ -43,5 +43,5 @@ export default function Landing() {
         </div>
       </div>
     </div>
-  );
+  )
 }

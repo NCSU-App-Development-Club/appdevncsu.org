@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import logo from "../../assets/images/logo.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import logo from '../../assets/images/logo.png'
 
 export default function Header() {
   return (
@@ -72,20 +72,20 @@ export default function Header() {
         </div>
       </div>
     </header>
-  );
+  )
 }
 
 function toggleDropdown(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
-  if (e.currentTarget.id === "burger") {
-    e.preventDefault();
+  if (e.currentTarget.id === 'burger') {
+    e.preventDefault()
   }
-  const dropdown = document.getElementById("dropdown");
-  if (!dropdown) return;
-  if (dropdown.classList.contains("right-0")) {
-    dropdown.classList.remove("right-0");
-    dropdown.classList.add("right-[-8rem]");
+  const dropdown = document.getElementById('dropdown')
+  if (!dropdown) return
+  if (dropdown.classList.contains('right-0')) {
+    dropdown.classList.remove('right-0')
+    dropdown.classList.add('right-[-8rem]')
   } else {
-    dropdown.classList.remove("right-[-8rem]");
-    dropdown.classList.add("right-0");
+    dropdown.classList.remove('right-[-8rem]')
+    dropdown.classList.add('right-0')
   }
 }

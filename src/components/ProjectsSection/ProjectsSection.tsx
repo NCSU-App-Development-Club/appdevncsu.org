@@ -1,14 +1,14 @@
-import Section from "../Section";
-import H2 from "../headings/H2";
-import ProjectCard from "../ProjectCard";
+import Section from '../Section'
+import H2 from '../headings/H2'
+import ProjectCard from '../ProjectCard'
 
 type Project = {
-  title: string;
-  dates: string;
-  description: string;
-  imageSrc: string;
-  imageAlt: string;
-};
+  title: string
+  dates: string
+  description: string
+  imageSrc: string
+  imageAlt: string
+}
 
 export default function ProjectsSection({ projects }: { projects: Project[] }) {
   return (
@@ -27,5 +27,5 @@ export default function ProjectsSection({ projects }: { projects: Project[] }) {
         ))}
       </div>
     </Section>
-  );
+  )
 }
