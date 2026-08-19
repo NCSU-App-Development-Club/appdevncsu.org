@@ -18,6 +18,7 @@ import P from './components/P'
 import projects from './assets/project-data.json'
 
 import ProjectsSection from './components/ProjectsSection/ProjectsSection'
+import ExternalLinkIcon from './components/ExternalLinkIcon'
 
 function App() {
   return (
@@ -133,9 +134,18 @@ function App() {
         <Section id="apply">
           <H2>Apply</H2>
           <P>
-            The application for Fall 2026 will open within the first few weeks
-            of the fall semester, check back here then for the link.
+            The application for Fall 2026 is now open! Apply before{' '}
+            <strong>Saturday, August 29th, at 11:59 PM</strong> to be considered
+            for this semester.
           </P>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdrS4zBy31OnwqxYn51qZpUhR9D2WvEWOqOa_A2nkJp4r4OFw/viewform"
+            target="application"
+            className="bg-white text-black px-3 py-1 rounded hover:bg-gray-300 w-fit flex flex-row items-center gap-1"
+          >
+            <span>Apply now</span>
+            <ExternalLinkIcon />
+          </a>
           {/* <P>
             In the meantime, please feel free to{" "}
             <a
