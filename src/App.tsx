@@ -1,24 +1,24 @@
-import reactLogo from './assets/images/react.svg'
 import flutterLogo from './assets/images/flutter.svg'
 import kotlinLogo from './assets/images/kotlin.svg'
+import reactLogo from './assets/images/react.svg'
 import swiftLogo from './assets/images/swift.svg'
 
 import androidMeetingPhoto from './assets/images/about/android-meeting.webp'
 import goodbyeDinnerPhoto from './assets/images/about/goodbye-dinner.webp'
 
-import Header from './components/Header'
 import Background from './components/Background'
+import Footer from './components/Footer'
+import Header from './components/Header'
 import Landing from './components/Landing'
 import Section from './components/Section'
-import Footer from './components/Footer'
 
 import H2 from './components/headings/H2'
 import P from './components/P'
 
 import projects from './assets/project-data.json'
 
-import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 import ExternalLinkIcon from './components/ExternalLinkIcon'
+import ProjectsSection from './components/ProjectsSection/ProjectsSection'
 
 function App() {
   return (
@@ -144,6 +144,21 @@ function App() {
             className="bg-white text-black px-3 py-1 rounded hover:bg-gray-300 w-fit flex flex-row items-center gap-1"
           >
             <span>Apply now</span>
+            <ExternalLinkIcon />
+          </a>
+          <P className="mt-8">
+            We'll also be having interest meetings on Tuesday, 8/25 and
+            Thursday, 8/27, at 6:30 PM. We'll be providing additional
+            information about the club, and the officers will be there to answer
+            any questions you may have. Fill out the interest form to be
+            notified with the location.
+          </P>
+          <a
+            href="https://forms.gle/5rUreCofoxQDYa3f6"
+            target="application"
+            className="bg-white text-black px-3 py-1 rounded hover:bg-gray-300 w-fit flex flex-row items-center gap-1"
+          >
+            <span>Interest form</span>
             <ExternalLinkIcon />
           </a>
           {/* <P>
