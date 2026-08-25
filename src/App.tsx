@@ -146,21 +146,13 @@ function App() {
             <span>Apply now</span>
             <ExternalLinkIcon />
           </a>
-          <P className="mt-8">
-            We'll also be having interest meetings on Tuesday, 8/25 and
-            Thursday, 8/27, at 6:30 PM. We'll be providing additional
-            information about the club, and the officers will be there to answer
-            any questions you may have. Fill out the interest form to be
-            notified with the location.
+          <h2 className="text-2xl mt-8">Interest Meetings</h2>
+          <P className="mt-2">
+            We'll also be having <strong>interest meetings</strong> on Tuesday,
+            8/25 in EB3 2232 and Thursday, 8/27, at 6:30 PM in EB3 2236. We'll
+            be providing additional information about the club, and the officers
+            will be there to answer any questions you may have.
           </P>
-          <a
-            href="https://forms.gle/5rUreCofoxQDYa3f6"
-            target="application"
-            className="bg-white text-black px-3 py-1 rounded hover:bg-gray-300 w-fit flex flex-row items-center gap-1"
-          >
-            <span>Interest form</span>
-            <ExternalLinkIcon />
-          </a>
           {/* <P>
             In the meantime, please feel free to{" "}
             <a
